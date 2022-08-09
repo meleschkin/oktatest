@@ -18,6 +18,7 @@ public class OktaClient {
             config.setClientId("0oa3vm5l1uVe8mwER0x7");
             config.setSecret("dZKkDrWvo4SNgVzcao2Irhso2XK_RMoEOpB4AwUk");
             config.setDiscoveryURI("https://hdi-partner.oktapreview.com");
+            log.info(config.toString());
             OidcClient oidcClient = new OidcClient(config);
             log.info(oidcClient.toString());
         } catch (Exception e) {
