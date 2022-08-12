@@ -20,87 +20,69 @@ public class MyAuthenticationStateHandler implements AuthenticationStateHandler 
     public static final String DATE_FORMAT = "dd.MM.yyyy HH:mm:ss.SSS";
     public static final String SESSION_TOKEN = "SessionToken: ";
 
-    @Override
-    public void handleUnauthenticated(@NotNull AuthenticationResponse authenticationResponse) {
+    private static void logStatus(@NotNull AuthenticationResponse authenticationResponse) {
         log.info(authenticationResponse.toString());
         log.info(STATUS + authenticationResponse.getStatusString());
+    }
 
+    @Override
+    public void handleUnauthenticated(@NotNull AuthenticationResponse authenticationResponse) {
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handlePasswordWarning(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handlePasswordExpired(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleRecovery(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleRecoveryChallenge(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handlePasswordReset(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleLockedOut(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleMfaRequired(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleMfaEnroll(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleMfaEnrollActivate(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleMfaChallenge(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 
     @Override
     public void handleSuccess(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
+        logStatus(authenticationResponse);
         String sessionToken = authenticationResponse.getSessionToken();
         log.info(SESSION_TOKEN + sessionToken);
         Date expiresAt = authenticationResponse.getExpiresAt();
@@ -114,13 +96,10 @@ public class MyAuthenticationStateHandler implements AuthenticationStateHandler 
         log.info(FIRST_NAME + firstName);
         String lastName = user.getLastName();
         log.info(LAST_NAME + lastName);
-
     }
 
     @Override
     public void handleUnknown(@NotNull AuthenticationResponse authenticationResponse) {
-        log.info(authenticationResponse.toString());
-        log.info(STATUS + authenticationResponse.getStatusString());
-
+        logStatus(authenticationResponse);
     }
 }
