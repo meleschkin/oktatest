@@ -86,5 +86,15 @@
             <artifactId>okta-sdk-okhttp</artifactId>
             <version>8.2.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.okta.jwt</groupId>
+            <artifactId>okta-jwt-verifier</artifactId>
+            <version>0.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.okta.jwt</groupId>
+            <artifactId>okta-jwt-verifier-impl</artifactId>
+            <version>0.5.3</version>
+        </dependency>
     </dependencies>
 </project>
