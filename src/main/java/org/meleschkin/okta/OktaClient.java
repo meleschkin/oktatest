@@ -11,14 +11,16 @@ import org.pac4j.oidc.config.OidcConfiguration;
 public class OktaClient {
 
     public static final String AUTHENTICATION_OKTA_URL = "https://hdi-partner.oktapreview.com";
+    public static final String CLIENT_ID = "0oa3vm5l1uVe8mwER0x7";
+    public static final String SECRET = "dZKkDrWvo4SNgVzcao2Irhso2XK_RMoEOpB4AwUk";
 
     public static void main(String[] args) {
         Configurator.initialize(new DefaultConfiguration());
         Configurator.setRootLevel(Level.INFO);
         try {
             OidcConfiguration config = new OidcConfiguration();
-            config.setClientId("0oa3vm5l1uVe8mwER0x7");
-            config.setSecret("dZKkDrWvo4SNgVzcao2Irhso2XK_RMoEOpB4AwUk");
+            config.setClientId(CLIENT_ID);
+            config.setSecret(SECRET);
             config.setDiscoveryURI(AUTHENTICATION_OKTA_URL);
             log.info(config.toString());
             OidcClient oidcClient = new OidcClient(config);
