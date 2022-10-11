@@ -18,12 +18,12 @@
         <dependency>
             <groupId>org.pac4j</groupId>
             <artifactId>javaee-pac4j</artifactId>
-            <version>7.0.0</version>
+            <version>7.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.pac4j</groupId>
             <artifactId>pac4j-oidc</artifactId>
-            <version>5.5.0</version>
+            <version>5.6.0</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -44,7 +44,7 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
-            <version>2.11.1</version>
+            <version>2.11.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -54,7 +54,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>2.0.1</version>
+            <version>2.0.3</version>
         </dependency>
         <dependency>
             <groupId>com.okta.authn.sdk</groupId>
@@ -89,12 +89,12 @@
         <dependency>
             <groupId>com.okta.jwt</groupId>
             <artifactId>okta-jwt-verifier</artifactId>
-            <version>0.5.5</version>
+            <version>0.5.6</version>
         </dependency>
         <dependency>
             <groupId>com.okta.jwt</groupId>
             <artifactId>okta-jwt-verifier-impl</artifactId>
-            <version>0.5.5</version>
+            <version>0.5.6</version>
         </dependency>
     </dependencies>
 </project>
