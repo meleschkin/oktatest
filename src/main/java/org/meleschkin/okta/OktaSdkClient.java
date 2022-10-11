@@ -4,13 +4,6 @@ import com.okta.authn.sdk.AuthenticationStateHandler;
 import com.okta.authn.sdk.client.AuthenticationClient;
 import com.okta.authn.sdk.client.AuthenticationClients;
 import com.okta.authn.sdk.resource.AuthenticationResponse;
-//import com.okta.sdk.authc.credentials.TokenClientCredentials;
-//import com.okta.sdk.client.Client;
-//import com.okta.sdk.client.Clients;
-//import com.okta.sdk.ds.DataStore;
-//import com.okta.sdk.resource.application.Application;
-//import com.okta.sdk.resource.application.ApplicationList;
-//import com.okta.sdk.resource.session.Session;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.core.config.Configurator;
@@ -38,19 +31,21 @@ public class OktaSdkClient {
                     USER, PASSWORD.toCharArray(), null, ignoringStateHandler);
             String sessionToken = authenticationResponse.getSessionToken();
             log.info(SESSION_TOKEN + sessionToken);
-//            DataStore ds = client.getDataStore();
-//            log.info(ds.toString());
-//            Client clientSession = Clients.builder()
-//                    .setOrgUrl(AUTHENTICATION_OKTA_URL)
-//                    .setClientCredentials(new TokenClientCredentials(sessionToken))
-//                    .build();
-//            log.info(clientSession.toString());
-//            Session session = clientSession.getSession(sessionToken);
-//            log.info(session.toString());
-//            ApplicationList appList = clientSession.listApplications();
-//            for (Application app : appList) {
-//                log.info(app.toString());
-//            }
+/*
+            DataStore ds = client.getDataStore();
+            log.info(ds.toString());
+            Client clientSession = Clients.builder()
+                    .setOrgUrl(AUTHENTICATION_OKTA_URL)
+                    .setClientCredentials(new TokenClientCredentials(sessionToken))
+                    .build();
+            log.info(clientSession.toString());
+            Session session = clientSession.getSession(sessionToken);
+            log.info(session.toString());
+            ApplicationList appList = clientSession.listApplications();
+            for (Application app : appList) {
+                log.info(app.toString());
+            }
+*/
         } catch (Exception e) {
             log.error(e.getMessage(), e);
         }
