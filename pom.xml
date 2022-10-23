@@ -44,7 +44,7 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
-            <version>2.11.2</version>
+            <version>2.12.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -89,12 +89,12 @@
         <dependency>
             <groupId>com.okta.jwt</groupId>
             <artifactId>okta-jwt-verifier</artifactId>
-            <version>0.5.6</version>
+            <version>0.5.7</version>
         </dependency>
         <dependency>
             <groupId>com.okta.jwt</groupId>
             <artifactId>okta-jwt-verifier-impl</artifactId>
-            <version>0.5.6</version>
+            <version>0.5.7</version>
         </dependency>
     </dependencies>
 </project>
