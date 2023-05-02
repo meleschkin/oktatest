@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.pac4j</groupId>
             <artifactId>pac4j-oidc</artifactId>
-            <version>5.7.0</version>
+            <version>5.7.1</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -69,12 +69,12 @@
         <dependency>
             <groupId>com.okta.sdk</groupId>
             <artifactId>okta-sdk-api</artifactId>
-            <version>10.2.2</version>
+            <version>10.3.0</version>
         </dependency>
         <dependency>
             <groupId>com.okta.sdk</groupId>
             <artifactId>okta-sdk-impl</artifactId>
-            <version>10.2.2</version>
+            <version>10.3.0</version>
         </dependency>
         <dependency>
             <groupId>com.okta.sdk</groupId>
