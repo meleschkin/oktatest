@@ -21,14 +21,14 @@
         <okta-sdk-api.version>14.0.0</okta-sdk-api.version>
         <okta-authn-sdk-impl.version>2.0.11</okta-authn-sdk-impl.version>
         <okta-authn-sdk-api.version>2.0.11</okta-authn-sdk-api.version>
-        <slf4j-simple.version>2.0.9</slf4j-simple.version>
+        <slf4j-simple.version>2.0.11</slf4j-simple.version>
         <commons-lang3.version>3.14.0</commons-lang3.version>
-        <joda-time.version>2.12.5</joda-time.version>
+        <joda-time.version>2.12.6</joda-time.version>
         <log4j-core.version>3.0.0-alpha1</log4j-core.version>
         <log4j-api.version>3.0.0-alpha1</log4j-api.version>
         <lombok.version>1.18.30</lombok.version>
-        <pac4j-oidc.version>6.0.0-RC10</pac4j-oidc.version>
-        <javaee-pac4j.version>7.1.0</javaee-pac4j.version>
+        <pac4j-oidc.version>6.0.1</pac4j-oidc.version>
+        <javaee-pac4j.version>8.0.0</javaee-pac4j.version>
     </properties>
 
     <dependencies>
